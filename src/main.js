@@ -457,7 +457,7 @@ const createBreed = async (traits1, traits2, skills1, skills2, contractAddr, arg
   console.log("Skills: ", skills)
   
   const skillsAPI = await getChainlinkSkills(contractAddr, skills)
-  console.log("Skills after call to Chainlink API Consumer: ", skillsAPI)
+  console.log("Skills after API Consumer: ", skillsAPI)
   const layers = layersSetup(
     layerConfigurations[layerConfigIndex].layersOrder
   );
